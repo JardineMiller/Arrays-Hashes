@@ -119,10 +119,10 @@ users = {
     # p users["Avril"][:pets]["colin"]
 
 # 5. Return the smallest of Erik's favourite numbers
-    # p users["Erik"][:favourite_numbers].sort.first
+    # p users["Erik"][:favourite_numbers].min
 
 # 6. Add the number `7` to Erik's favourite numbers
-    # p users["Erik"][:favourite_numbers].unshift(7)
+    p users["Erik"][:favourite_numbers] << 7
 
 # 7. Change Erik's hometown to Edinburgh
     # p users["Erik"][:home_town] = "Edinburgh"
