@@ -17,6 +17,7 @@ lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'P
     # puts lines.select {|stop| stop == "Princes Street"}
     # puts lines.keep_if {|stop| stop == "Princes Street"}
     # puts lines.delete("Princes Street")
+    # puts lines.last
   
     # lines.each do |each|
     #   if each == "Princes Street"
@@ -106,19 +107,38 @@ users = {
 }
 
 # 1. Return Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+    # p users["Jonathan"][:twitter]
 
 # 2. Return Erik's hometown
+    # p users["Erik"][:home_town]
 
 # 3. Return the array of Erik's favourite numbers
+    # p users["Erik"][:favourite_numbers]
 
 # 4. Return the type of Avril's pet Colin
+    # p users["Avril"][:pets]["colin"]
 
 # 5. Return the smallest of Erik's favourite numbers
+    # p users["Erik"][:favourite_numbers].sort.first
 
 # 6. Add the number `7` to Erik's favourite numbers
+    # p users["Erik"][:favourite_numbers].unshift(7)
 
 # 7. Change Erik's hometown to Edinburgh
+    # p users["Erik"][:home_town] = "Edinburgh"
 
 # 8. Add a pet dog to Erik called "Fluffy"
-
+    # p users["Erik"][:pets]["fluffy"] = :dog
+    
 # 9. Add yourself to the users hash
+    # user = Hash.new
+    # user[:twitter] = "jmiller89"
+    # user[:favourite_numbers] = [5, 7, 9, 14]
+    # user[:home_town] = "Bristol"
+    # user[:pets] = {
+    #   "zeus" => :cat,
+    #   "ziggy" => :cat,
+    #   "athena" => :cat
+    # }
+
+    # users.store("Jardine", user)
