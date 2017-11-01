@@ -3,37 +3,73 @@
 lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
 # 1. Work out how many stops there are in the array
-# puts lines.length()
+    #puts lines.length()
 
 # 2. Return 'Edinburgh Park' from the array
+    # puts lines[1]
 
 # 3. How many ways can we return 'Princes Street' from the array?
+    # puts lines[4]
+    # puts lines[ -( lines.length - (lines.length - 1) ) ] # Lol...
+    # puts lines[-1]
+    # puts lines.fetch(4)
+    # puts lines.values_at(4)
+    # puts lines.select {|stop| stop == "Princes Street"}
+    # puts lines.keep_if {|stop| stop == "Princes Street"}
+    # puts lines.delete("Princes Street")
+  
+    # lines.each do |each|
+    #   if each == "Princes Street"
+    #     puts each
+    #   end
+    # end
 
 # 4. Work out the index position of 'Haymarket'
+    # puts lines.index("Haymarket")
 
 # 5. Add 'Airport' to the start of the array
+    # lines.unshift("Airport")
+    # puts lines
 
 # 6. Add 'York Place' to the end of the array
+    # lines.push("York Place")
+    # puts lines
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
+    # lines.delete("Edinburgh Park")
+    # puts lines  
 
 # 8. Delete 'Edinburgh Park' from the array by index
+    # lines.delete_at(1)
+    # puts lines
 
 # 9. Reverse the positions of the stops in the array
+    # puts lines.reverse
 
 ### B. Given the following data structure:
 
 my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 1. How would you return the string `"One"`?
+    # puts my_hash[1]
 
 # 2. How would you return the string `"Two"`?
+    # puts my_hash[:two]
 
 # 3. How would you return the number `2`?
+    # puts my_hash["two"]
+    # my_hash.value
+    # puts my_hash.values_at("two")
 
 # 4. How would you add `{3 => "Three"}` to the hash?
+    # my_hash.store(3, "Three")
+    # my_hash[3] = "Three"
+    # p my_hash
 
 # 5. How would you add `{:four => 4}` to the hash?
+    # my_hash.store(:four, 4)
+    # my_hash[:four] = 4
+    # p my_hash
 
 ### C. Given the following data structure:
 
